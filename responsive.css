@@ -1,0 +1,281 @@
+/* =====================================
+   ON AUTO DETAILING
+   Responsive Styles
+===================================== */
+
+/* Large desktops (1440px+) */
+@media (min-width: 1440px){
+
+    .hero{
+        max-width:1000px;
+    }
+
+    .hero h1{
+        font-size:90px;
+    }
+
+    .hero p{
+        font-size:26px;
+    }
+
+    section{
+        padding:120px 12%;
+    }
+
+    .pricing{
+        gap:40px;
+    }
+
+}
+
+/* Laptops */
+
+@media (max-width:1200px){
+
+.hero h1{
+font-size:64px;
+}
+
+nav{
+padding:18px 5%;
+}
+
+section{
+padding:90px 8%;
+}
+
+}
+
+/* Tablets */
+
+@media (max-width:992px){
+
+.hero h1{
+font-size:52px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+nav ul{
+gap:20px;
+}
+
+.pricing,
+.gallery,
+.reviews,
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* Phones */
+
+@media (max-width:768px){
+
+nav{
+
+flex-direction:column;
+padding:20px;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+.primary,
+.secondary{
+
+width:240px;
+text-align:center;
+
+}
+
+.stats,
+.pricing,
+.gallery,
+.reviews{
+
+grid-template-columns:1fr;
+
+}
+
+section{
+
+padding:70px 25px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.card h3{
+
+font-size:46px;
+
+}
+
+.contact-box{
+
+padding:35px 20px;
+
+}
+
+.contact-box a{
+
+font-size:20px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+section h1{
+
+font-size:34px;
+
+}
+
+.loading-bar{
+
+width:220px;
+
+}
+
+.card h3{
+
+font-size:40px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+}
+
+/* Ultra-wide Displays */
+
+@media (min-width:1800px){
+
+body{
+
+font-size:18px;
+
+}
+
+.hero h1{
+
+font-size:100px;
+
+}
+
+.hero{
+
+max-width:1200px;
+
+}
+
+section{
+
+padding:140px 16%;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+.pricing{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.reviews{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+/* Reduce motion for accessibility */
+
+@media (prefers-reduced-motion: reduce){
+
+*{
+
+animation:none !important;
+transition:none !important;
+scroll-behavior:auto !important;
+
+}
+
+}
